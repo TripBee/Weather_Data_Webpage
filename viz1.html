@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Some Boilerplate info for the page -->
+  <meta charset="UTF-8">
+  <!-- the title -->
+  <title>Viz1</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- now we reference our own CSS stylesheet for additional changes -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="landing.html">Latitude</a>
+      </div> 
+        <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="viz1.html">Temperature</a></li>
+            <li><a href="viz2.html">Humidity</a></li>
+            <li><a href="viz3.html">Cloudiness</a></li>
+            <li><a href="viz4.html">Wind Speed</a></li>
+          </ul>
+        </li>
+
+        <li><a href="comparisons.html">Comparisons</a></li>
+
+        <li><a href="data.html">Data</a></li>
+
+      </ul>
+      
+    </div>
+  </nav>
+
+
+
+<div class="row">
+  <!--First Column in this Row-->
+  <div class="col-xs-12 col-sm-12 col-md-8">
+    <div class="box">
+      <h2>Max Temperature</h2>
+      <hr>
+      <article class="row">
+        <a target="_blank" href="Resources/images/Fig1.png">
+          <img class ="viz" src="Resources/images/Fig1.png" alt="Tempurature Map">
+        </a>  
+      </article>
+      <h3>As expected, the weather becomes significantly warmer as one approaches the equator(0 Deg. Latitude). More interestingly, however, it is a fact that the southern hemisphere tends to be warmer than the northern hemisphere this time of year. This may be due to the the current eason at the time of data collection.</h3>  
+    </div>
+  </div>
+
+  <!--Second Column in this Row-->
+  <div class="col-xs-12 col-sm-12 col-md-4">
+    <div class="box">
+      <h2 class ="viz">Visualizations</h2>
+      <hr>
+
+        <article class="row col-xs-3 col-sm-3 col-md-6">
+          <a target="_blank" href="viz1.html">
+            <img class ="viz" src="Resources/images/Fig1.png" alt="Cloudy Map">
+          </a>  
+        </article>
+          
+        <article class="row col-xs-3 col-sm-3 col-md-6">
+          <a target="_blank" href="viz2.html">
+            <img class ="viz" src="Resources/images/Fig2.png" alt="Humidity Map">
+          </a> 
+        </article>
+
+
+        <article class="row col-xs-3 col-sm-3 col-md-6">
+          <a target="_blank" href="viz3.html">
+            <img class ="viz" src="Resources/images/Fig3.png" alt="Tempurature Map">
+          </a>
+        </article>
+
+        <!-- an example using figure/ficaption -->
+        <article class="row col-xs-3 col-sm-3 col-md-6">
+          <a target="_blank" href="viz4.html">
+            <img class ="viz" src="Resources/images/Fig4.png" alt="Wind Map">
+          </a>
+        </article>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
